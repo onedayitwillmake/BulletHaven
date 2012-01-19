@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		482D655814C4F1F700168425 /* BulletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 482D655714C4F1F700168425 /* BulletLayer.mm */; };
-		482D655C14C541BE00168425 /* BulletCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 482D655B14C541BE00168425 /* BulletCommand.cpp */; };
-		482D656314C54C7A00168425 /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 482D656114C54C7A00168425 /* Bullet.cpp */; };
-		482D656914C54DD000168425 /* CinderMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 482D656814C54DD000168425 /* CinderMath.cpp */; };
 		489B578914C4EDD60039A278 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578814C4EDD60039A278 /* QuartzCore.framework */; };
 		489B578B14C4EDD60039A278 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578A14C4EDD60039A278 /* OpenGLES.framework */; };
 		489B578D14C4EDD60039A278 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578C14C4EDD60039A278 /* OpenAL.framework */; };
@@ -174,20 +171,17 @@
 		489B59C714C4EEF30039A278 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489B59C314C4EEF30039A278 /* tinyxml.cpp */; };
 		489B59C814C4EEF30039A278 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489B59C514C4EEF30039A278 /* tinyxmlerror.cpp */; };
 		489B59C914C4EEF30039A278 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489B59C614C4EEF30039A278 /* tinyxmlparser.cpp */; };
+		48A3AF9614C7F80600C6A88F /* command.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9214C7F80600C6A88F /* command.cc */; };
+		48A3AF9714C7F80600C6A88F /* object.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9414C7F80600C6A88F /* object.cc */; };
+		48A3AF9C14C7F9C600C6A88F /* BulletMLController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9B14C7F9C500C6A88F /* BulletMLController.cc */; };
+		48A3AFA014C7FDAB00C6A88F /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48A3AF9E14C7FDAB00C6A88F /* sample.xml */; };
+		48A3AFA114C7FDAB00C6A88F /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48A3AF9F14C7FDAB00C6A88F /* test.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		482D655614C4F1F700168425 /* BulletLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletLayer.h; sourceTree = "<group>"; };
 		482D655714C4F1F700168425 /* BulletLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BulletLayer.mm; sourceTree = "<group>"; };
-		482D655B14C541BE00168425 /* BulletCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletCommand.cpp; sourceTree = "<group>"; };
-		482D655D14C541CC00168425 /* BulletCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletCommand.h; sourceTree = "<group>"; };
-		482D656114C54C7A00168425 /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
-		482D656214C54C7A00168425 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
 		482D656514C54D2200168425 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
-		482D656614C54DA100168425 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
-		482D656714C54DB900168425 /* Cinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cinder.h; sourceTree = "<group>"; };
-		482D656814C54DD000168425 /* CinderMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CinderMath.cpp; sourceTree = "<group>"; };
-		482D656A14C54DEA00168425 /* CinderMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderMath.h; sourceTree = "<group>"; };
 		489B578414C4EDD60039A278 /* BulletHaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulletHaven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489B578814C4EDD60039A278 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		489B578A14C4EDD60039A278 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -524,6 +518,14 @@
 		489B59C414C4EEF30039A278 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = tinyxml/tinyxml.h; sourceTree = "<group>"; };
 		489B59C514C4EEF30039A278 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = tinyxml/tinyxmlerror.cpp; sourceTree = "<group>"; };
 		489B59C614C4EEF30039A278 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = tinyxml/tinyxmlparser.cpp; sourceTree = "<group>"; };
+		48A3AF9214C7F80600C6A88F /* command.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = command.cc; sourceTree = "<group>"; };
+		48A3AF9314C7F80600C6A88F /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
+		48A3AF9414C7F80600C6A88F /* object.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cc; sourceTree = "<group>"; };
+		48A3AF9514C7F80600C6A88F /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		48A3AF9B14C7F9C500C6A88F /* BulletMLController.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletMLController.cc; sourceTree = "<group>"; };
+		48A3AF9D14C7F9D400C6A88F /* BulletMLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletMLController.h; sourceTree = "<group>"; };
+		48A3AF9E14C7FDAB00C6A88F /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
+		48A3AF9F14C7FDAB00C6A88F /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,15 +550,13 @@
 		482D656414C54C8B00168425 /* BulletML */ = {
 			isa = PBXGroup;
 			children = (
-				482D656714C54DB900168425 /* Cinder.h */,
-				482D656814C54DD000168425 /* CinderMath.cpp */,
-				482D656A14C54DEA00168425 /* CinderMath.h */,
-				482D656614C54DA100168425 /* Vector.h */,
-				482D656114C54C7A00168425 /* Bullet.cpp */,
-				482D656214C54C7A00168425 /* Bullet.h */,
-				482D655B14C541BE00168425 /* BulletCommand.cpp */,
-				482D655D14C541CC00168425 /* BulletCommand.h */,
+				48A3AF9214C7F80600C6A88F /* command.cc */,
+				48A3AF9314C7F80600C6A88F /* command.h */,
+				48A3AF9414C7F80600C6A88F /* object.cc */,
+				48A3AF9514C7F80600C6A88F /* object.h */,
 				482D656514C54D2200168425 /* StdAfx.h */,
+				48A3AF9B14C7F9C500C6A88F /* BulletMLController.cc */,
+				48A3AF9D14C7F9D400C6A88F /* BulletMLController.h */,
 			);
 			name = BulletML;
 			sourceTree = "<group>";
@@ -618,6 +618,8 @@
 		489B579914C4EDD60039A278 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				48A3AF9E14C7FDAB00C6A88F /* sample.xml */,
+				48A3AF9F14C7FDAB00C6A88F /* test.xml */,
 				489B579A14C4EDD60039A278 /* Default.png */,
 				489B579C14C4EDD60039A278 /* fps_images.png */,
 				489B579E14C4EDD60039A278 /* Icon-72.png */,
@@ -1174,6 +1176,8 @@
 				489B57A914C4EDD60039A278 /* Icon@2x.png in Resources */,
 				489B57AC14C4EDD60039A278 /* iTunesArtwork in Resources */,
 				489B596E14C4EDD90039A278 /* blocks.png in Resources */,
+				48A3AFA014C7FDAB00C6A88F /* sample.xml in Resources */,
+				48A3AFA114C7FDAB00C6A88F /* test.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1330,9 +1334,9 @@
 				489B59C814C4EEF30039A278 /* tinyxmlerror.cpp in Sources */,
 				489B59C914C4EEF30039A278 /* tinyxmlparser.cpp in Sources */,
 				482D655814C4F1F700168425 /* BulletLayer.mm in Sources */,
-				482D655C14C541BE00168425 /* BulletCommand.cpp in Sources */,
-				482D656314C54C7A00168425 /* Bullet.cpp in Sources */,
-				482D656914C54DD000168425 /* CinderMath.cpp in Sources */,
+				48A3AF9614C7F80600C6A88F /* command.cc in Sources */,
+				48A3AF9714C7F80600C6A88F /* object.cc in Sources */,
+				48A3AF9C14C7F9C600C6A88F /* BulletMLController.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

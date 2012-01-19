@@ -17,14 +17,15 @@
 
 class BulletMLController {
 private:
-    std::vector<Object*> objs;
+    
     static BulletMLController* mInstance;
     
 public:
-    BulletMLController( std::string filename );
+    BulletMLController( std::string *filename );
     ~BulletMLController();
     static BulletMLController* getInstance();
     
+    std::vector<Object*> objs;
     void addObj(Object* object);
     void update();
     void draw();

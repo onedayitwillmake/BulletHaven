@@ -10,13 +10,13 @@
 
 
 BulletMLController* BulletMLController::mInstance = NULL;
-BulletMLController::BulletMLController(  std::string filename ) {    
+BulletMLController::BulletMLController( std::string *filename ) {    
     BulletMLController::mInstance = this;
     turn = 0;
     ship = new Ship();
     objs.push_back(ship);
     
-    BulletMLParser* bp = new BulletMLParserTinyXML( filename );
+    BulletMLParser* bp = new BulletMLParserTinyXML( *filename );
     bp->build();
     objs.push_back(new Bullet(bp, 150, 100, 0, 0));
 }
@@ -37,14 +37,14 @@ void BulletMLController::update() {
 }
 
 void BulletMLController::draw() {
-    for (size_t i = 0; i < objs.size(); i++) {
-        objs[i]->draw();
-    }
+//    for (size_t i = 0; i < objs.size(); i++) {
+//        objs[i]->draw();
+//    }
 }
 
 BulletMLController* BulletMLController::getInstance() {
 	if (mInstance == NULL) {
-		mInstance = new BulletMLController("sample.xml");
+		mInstance = new BulletMLController( new std::string("sample.xml") );
 	}
 	return mInstance;
 }

@@ -7,7 +7,7 @@
 //#include <SDL.h>
 
 Object::Object(double x0, double y0, double d0, double s0)
-    : x(x0), y(y0), d(d0), s(s0)
+    : x(x0), y(y0), d(d0), s(s0), hasCCNode(false), type(BulletTypeObject)
 {}
 
 void Object::move() {
@@ -23,22 +23,25 @@ void Object::draw() {
 //    SDL_FillRect(s, &rect, col);
 }
 
-Shot::Shot(double x, double y, double d, double s)
-    : Object(x, y, d, s)
-{}
+Shot::Shot(double x, double y, double d, double s) : Object(x, y, d, s) {
+    type = BulletTypeShot;
+}
 
 
 Bullet::Bullet(class BulletMLState* state,
                double x, double y, double d, double s)
     : Object(x, y, d, s),
-      command_(new BulletCommand(state, this)), alive_(true)
-{}
+      command_(new BulletCommand(state, this)), alive_(true) {
+          type = BulletTypeBullet;
+}
 
 Bullet::Bullet(class BulletMLParser* parser,
                double x, double y, double d, double s)
     : Object(x, y, d, s),
       command_(new BulletCommand(parser, this)), alive_(true)
-{}
+{
+      type = BulletTypeBullet;
+}
 
 void Bullet::move() {
     if (alive_) {
@@ -55,7 +58,9 @@ void Bullet::draw() {
 
 Ship::Ship()
     : Object(150, 300, 0, 0)
-{}
+{
+    type = BulletTypeShip;
+}
 
 void Ship::move() {
 //    Uint8* ks = SDL_GetKeyState(0);

@@ -1,6 +1,12 @@
 #ifndef object_h_
 #define object_h_
 
+enum BulletMLObjectType {
+    BulletTypeObject,
+    BulletTypeShot,
+    BulletTypeBullet,
+    BulletTypeShip
+};
 class Object {
 protected:
     Object(double x, double y, double d, double s);
@@ -13,8 +19,8 @@ public:
 
     double x, y;
     double d, s;
-    unsigned int col;
-
+    BulletMLObjectType type;
+    bool hasCCNode;
 };
 
 class Shot : public Object {
@@ -31,10 +37,11 @@ public:
     virtual void move();
     virtual void draw();
     void die() { alive_ = false; }
+    bool alive_;
 
 private:
     class BulletCommand* command_;
-    bool alive_;
+
 };
 
 class Ship : public Object {

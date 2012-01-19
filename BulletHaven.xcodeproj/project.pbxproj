@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		482D655814C4F1F700168425 /* BulletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 482D655714C4F1F700168425 /* BulletLayer.mm */; };
+		4886913D14C89D0C0020EA27 /* CCBulletSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4886913C14C89D0C0020EA27 /* CCBulletSprite.mm */; };
+		4886913F14C8AA1D0020EA27 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4886913E14C8AA1D0020EA27 /* particle.png */; };
 		489B578914C4EDD60039A278 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578814C4EDD60039A278 /* QuartzCore.framework */; };
 		489B578B14C4EDD60039A278 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578A14C4EDD60039A278 /* OpenGLES.framework */; };
 		489B578D14C4EDD60039A278 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578C14C4EDD60039A278 /* OpenAL.framework */; };
@@ -173,15 +175,17 @@
 		489B59C914C4EEF30039A278 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489B59C614C4EEF30039A278 /* tinyxmlparser.cpp */; };
 		48A3AF9614C7F80600C6A88F /* command.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9214C7F80600C6A88F /* command.cc */; };
 		48A3AF9714C7F80600C6A88F /* object.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9414C7F80600C6A88F /* object.cc */; };
-		48A3AF9C14C7F9C600C6A88F /* BulletMLController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9B14C7F9C500C6A88F /* BulletMLController.cc */; };
+		48A3AF9C14C7F9C600C6A88F /* BulletMLController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9B14C7F9C500C6A88F /* BulletMLController.mm */; };
 		48A3AFA014C7FDAB00C6A88F /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48A3AF9E14C7FDAB00C6A88F /* sample.xml */; };
-		48A3AFA114C7FDAB00C6A88F /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48A3AF9F14C7FDAB00C6A88F /* test.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		482D655614C4F1F700168425 /* BulletLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletLayer.h; sourceTree = "<group>"; };
 		482D655714C4F1F700168425 /* BulletLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BulletLayer.mm; sourceTree = "<group>"; };
 		482D656514C54D2200168425 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		4886913B14C89D0C0020EA27 /* CCBulletSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBulletSprite.h; sourceTree = "<group>"; };
+		4886913C14C89D0C0020EA27 /* CCBulletSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCBulletSprite.mm; sourceTree = "<group>"; };
+		4886913E14C8AA1D0020EA27 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
 		489B578414C4EDD60039A278 /* BulletHaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulletHaven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489B578814C4EDD60039A278 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		489B578A14C4EDD60039A278 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -522,10 +526,9 @@
 		48A3AF9314C7F80600C6A88F /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
 		48A3AF9414C7F80600C6A88F /* object.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cc; sourceTree = "<group>"; };
 		48A3AF9514C7F80600C6A88F /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
-		48A3AF9B14C7F9C500C6A88F /* BulletMLController.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletMLController.cc; sourceTree = "<group>"; };
+		48A3AF9B14C7F9C500C6A88F /* BulletMLController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BulletMLController.mm; sourceTree = "<group>"; };
 		48A3AF9D14C7F9D400C6A88F /* BulletMLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletMLController.h; sourceTree = "<group>"; };
 		48A3AF9E14C7FDAB00C6A88F /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
-		48A3AF9F14C7FDAB00C6A88F /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,10 +558,27 @@
 				48A3AF9414C7F80600C6A88F /* object.cc */,
 				48A3AF9514C7F80600C6A88F /* object.h */,
 				482D656514C54D2200168425 /* StdAfx.h */,
-				48A3AF9B14C7F9C500C6A88F /* BulletMLController.cc */,
+				48A3AF9B14C7F9C500C6A88F /* BulletMLController.mm */,
 				48A3AF9D14C7F9D400C6A88F /* BulletMLController.h */,
+				4886913B14C89D0C0020EA27 /* CCBulletSprite.h */,
+				4886913C14C89D0C0020EA27 /* CCBulletSprite.mm */,
 			);
 			name = BulletML;
+			sourceTree = "<group>";
+		};
+		4886914014C8AF990020EA27 /* bulletml */ = {
+			isa = PBXGroup;
+			children = (
+				4886914114C8AFA10020EA27 /* boss */,
+			);
+			name = bulletml;
+			sourceTree = "<group>";
+		};
+		4886914114C8AFA10020EA27 /* boss */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = boss;
 			sourceTree = "<group>";
 		};
 		489B577914C4EDD60039A278 = {
@@ -618,8 +638,9 @@
 		489B579914C4EDD60039A278 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4886914014C8AF990020EA27 /* bulletml */,
+				4886913E14C8AA1D0020EA27 /* particle.png */,
 				48A3AF9E14C7FDAB00C6A88F /* sample.xml */,
-				48A3AF9F14C7FDAB00C6A88F /* test.xml */,
 				489B579A14C4EDD60039A278 /* Default.png */,
 				489B579C14C4EDD60039A278 /* fps_images.png */,
 				489B579E14C4EDD60039A278 /* Icon-72.png */,
@@ -1177,7 +1198,7 @@
 				489B57AC14C4EDD60039A278 /* iTunesArtwork in Resources */,
 				489B596E14C4EDD90039A278 /* blocks.png in Resources */,
 				48A3AFA014C7FDAB00C6A88F /* sample.xml in Resources */,
-				48A3AFA114C7FDAB00C6A88F /* test.xml in Resources */,
+				4886913F14C8AA1D0020EA27 /* particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1336,7 +1357,8 @@
 				482D655814C4F1F700168425 /* BulletLayer.mm in Sources */,
 				48A3AF9614C7F80600C6A88F /* command.cc in Sources */,
 				48A3AF9714C7F80600C6A88F /* object.cc in Sources */,
-				48A3AF9C14C7F9C600C6A88F /* BulletMLController.cc in Sources */,
+				48A3AF9C14C7F9C600C6A88F /* BulletMLController.mm in Sources */,
+				4886913D14C89D0C0020EA27 /* CCBulletSprite.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

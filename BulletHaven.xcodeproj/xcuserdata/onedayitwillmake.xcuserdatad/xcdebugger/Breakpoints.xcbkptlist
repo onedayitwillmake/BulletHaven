@@ -8,27 +8,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "BulletHaven/bulletmlrunnerimpl.h"
-         timestampString = "348450944.210431"
+         filePath = "BulletHaven/bulletmlrunner.cpp"
+         timestampString = "348694427.62554"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "165"
-         endingLineNumber = "165"
-         landmarkName = "class BulletMLRunnerImpl"
-         landmarkType = "3">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "BulletHaven/BulletMLController.cc"
-         timestampString = "348651130.834308"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "17"
-         endingLineNumber = "17"
-         landmarkName = "BulletMLController::BulletMLController( std::string filename )"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
+         landmarkName = "BulletMLRunner::isEnd()"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

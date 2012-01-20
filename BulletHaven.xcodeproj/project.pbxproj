@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		482D655814C4F1F700168425 /* BulletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 482D655714C4F1F700168425 /* BulletLayer.mm */; };
 		4886913D14C89D0C0020EA27 /* CCBulletSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4886913C14C89D0C0020EA27 /* CCBulletSprite.mm */; };
-		4886913F14C8AA1D0020EA27 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4886913E14C8AA1D0020EA27 /* particle.png */; };
 		489B578914C4EDD60039A278 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578814C4EDD60039A278 /* QuartzCore.framework */; };
 		489B578B14C4EDD60039A278 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578A14C4EDD60039A278 /* OpenGLES.framework */; };
 		489B578D14C4EDD60039A278 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489B578C14C4EDD60039A278 /* OpenAL.framework */; };
@@ -175,16 +174,16 @@
 		48A3AF9614C7F80600C6A88F /* command.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9214C7F80600C6A88F /* command.cc */; };
 		48A3AF9714C7F80600C6A88F /* object.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9414C7F80600C6A88F /* object.cc */; };
 		48A3AF9C14C7F9C600C6A88F /* BulletMLController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9B14C7F9C500C6A88F /* BulletMLController.mm */; };
-		48A3AFA014C7FDAB00C6A88F /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48A3AF9E14C7FDAB00C6A88F /* sample.xml */; };
+		48F154B014C8EAD90049CB44 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F154AF14C8EAD90049CB44 /* particle.png */; };
+		48F1551414C8EF0B0049CB44 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48F1551314C8EF0B0049CB44 /* sample.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		482D655614C4F1F700168425 /* BulletLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletLayer.h; sourceTree = "<group>"; };
-		482D655714C4F1F700168425 /* BulletLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BulletLayer.mm; sourceTree = "<group>"; };
-		482D656514C54D2200168425 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
-		4886913B14C89D0C0020EA27 /* CCBulletSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBulletSprite.h; sourceTree = "<group>"; };
-		4886913C14C89D0C0020EA27 /* CCBulletSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCBulletSprite.mm; sourceTree = "<group>"; };
-		4886913E14C8AA1D0020EA27 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
+		482D655614C4F1F700168425 /* BulletLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulletLayer.h; path = "Source/bulletml-wrapper/BulletLayer.h"; sourceTree = "<group>"; };
+		482D655714C4F1F700168425 /* BulletLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BulletLayer.mm; path = "Source/bulletml-wrapper/BulletLayer.mm"; sourceTree = "<group>"; };
+		482D656514C54D2200168425 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StdAfx.h; path = libs/BulletML/StdAfx.h; sourceTree = "<group>"; };
+		4886913B14C89D0C0020EA27 /* CCBulletSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCBulletSprite.h; path = "Source/bulletml-wrapper/CCBulletSprite.h"; sourceTree = "<group>"; };
+		4886913C14C89D0C0020EA27 /* CCBulletSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCBulletSprite.mm; path = "Source/bulletml-wrapper/CCBulletSprite.mm"; sourceTree = "<group>"; };
 		489B578414C4EDD60039A278 /* BulletHaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulletHaven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489B578814C4EDD60039A278 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		489B578A14C4EDD60039A278 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -488,44 +487,45 @@
 		489B595B14C4EDD90039A278 /* LICENSE_Box2D.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE_Box2D.txt; path = libs/LICENSE_Box2D.txt; sourceTree = "<group>"; };
 		489B595D14C4EDD90039A278 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		489B595E14C4EDD90039A278 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		489B596014C4EDD90039A278 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		489B596114C4EDD90039A278 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		489B596314C4EDD90039A278 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		489B596414C4EDD90039A278 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		489B596914C4EDD90039A278 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
-		489B596A14C4EDD90039A278 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
-		489B596C14C4EDD90039A278 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		489B596014C4EDD90039A278 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/AppDelegate.h; sourceTree = "<group>"; };
+		489B596114C4EDD90039A278 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Source/AppDelegate.mm; sourceTree = "<group>"; };
+		489B596314C4EDD90039A278 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Source/RootViewController.h; sourceTree = "<group>"; };
+		489B596414C4EDD90039A278 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Source/RootViewController.m; sourceTree = "<group>"; };
+		489B596914C4EDD90039A278 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Source/GLES-Render.h"; sourceTree = "<group>"; };
+		489B596A14C4EDD90039A278 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "Source/GLES-Render.mm"; sourceTree = "<group>"; };
+		489B596C14C4EDD90039A278 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameConfig.h; path = Source/GameConfig.h; sourceTree = "<group>"; };
 		489B596D14C4EDD90039A278 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
-		489B59A914C4EEDA0039A278 /* auto_ptr_fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auto_ptr_fix.h; sourceTree = "<group>"; };
-		489B59AA14C4EEDA0039A278 /* bulletmlcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulletmlcommon.h; sourceTree = "<group>"; };
-		489B59AB14C4EEDA0039A278 /* bulletmlerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulletmlerror.h; sourceTree = "<group>"; };
-		489B59AC14C4EEDA0039A278 /* bulletmlparser-tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "bulletmlparser-tinyxml.cpp"; sourceTree = "<group>"; };
-		489B59AD14C4EEDA0039A278 /* bulletmlparser-tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bulletmlparser-tinyxml.h"; sourceTree = "<group>"; };
-		489B59AE14C4EEDA0039A278 /* bulletmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bulletmlparser.cpp; sourceTree = "<group>"; };
-		489B59AF14C4EEDA0039A278 /* bulletmlparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulletmlparser.h; sourceTree = "<group>"; };
-		489B59B014C4EEDA0039A278 /* bulletmlrunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bulletmlrunner.cpp; sourceTree = "<group>"; };
-		489B59B114C4EEDA0039A278 /* bulletmlrunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulletmlrunner.h; sourceTree = "<group>"; };
-		489B59B214C4EEDA0039A278 /* bulletmlrunnerimpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bulletmlrunnerimpl.cpp; sourceTree = "<group>"; };
-		489B59B314C4EEDA0039A278 /* bulletmlrunnerimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulletmlrunnerimpl.h; sourceTree = "<group>"; };
-		489B59B414C4EEDA0039A278 /* bulletmltree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bulletmltree.cpp; sourceTree = "<group>"; };
-		489B59B514C4EEDA0039A278 /* bulletmltree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulletmltree.h; sourceTree = "<group>"; };
-		489B59B614C4EEDA0039A278 /* calc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = calc.cpp; sourceTree = "<group>"; };
-		489B59B714C4EEDA0039A278 /* calc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calc.h; sourceTree = "<group>"; };
-		489B59B814C4EEDA0039A278 /* formula-variables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "formula-variables.cpp"; sourceTree = "<group>"; };
-		489B59B914C4EEDA0039A278 /* formula-variables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "formula-variables.h"; sourceTree = "<group>"; };
-		489B59BA14C4EEDA0039A278 /* formula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formula.h; sourceTree = "<group>"; };
-		489B59BB14C4EEDA0039A278 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
-		489B59C314C4EEF30039A278 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = tinyxml/tinyxml.cpp; sourceTree = "<group>"; };
-		489B59C414C4EEF30039A278 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = tinyxml/tinyxml.h; sourceTree = "<group>"; };
-		489B59C514C4EEF30039A278 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = tinyxml/tinyxmlerror.cpp; sourceTree = "<group>"; };
-		489B59C614C4EEF30039A278 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = tinyxml/tinyxmlparser.cpp; sourceTree = "<group>"; };
-		48A3AF9214C7F80600C6A88F /* command.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = command.cc; sourceTree = "<group>"; };
-		48A3AF9314C7F80600C6A88F /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
-		48A3AF9414C7F80600C6A88F /* object.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cc; sourceTree = "<group>"; };
-		48A3AF9514C7F80600C6A88F /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
-		48A3AF9B14C7F9C500C6A88F /* BulletMLController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BulletMLController.mm; sourceTree = "<group>"; };
-		48A3AF9D14C7F9D400C6A88F /* BulletMLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletMLController.h; sourceTree = "<group>"; };
-		48A3AF9E14C7FDAB00C6A88F /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
+		489B59AA14C4EEDA0039A278 /* bulletmlcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bulletmlcommon.h; path = libs/BulletML/bulletmlcommon.h; sourceTree = "<group>"; };
+		489B59AB14C4EEDA0039A278 /* bulletmlerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bulletmlerror.h; path = libs/BulletML/bulletmlerror.h; sourceTree = "<group>"; };
+		489B59AC14C4EEDA0039A278 /* bulletmlparser-tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "bulletmlparser-tinyxml.cpp"; path = "libs/BulletML/bulletmlparser-tinyxml.cpp"; sourceTree = "<group>"; };
+		489B59AD14C4EEDA0039A278 /* bulletmlparser-tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "bulletmlparser-tinyxml.h"; path = "libs/BulletML/bulletmlparser-tinyxml.h"; sourceTree = "<group>"; };
+		489B59AE14C4EEDA0039A278 /* bulletmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bulletmlparser.cpp; path = libs/BulletML/bulletmlparser.cpp; sourceTree = "<group>"; };
+		489B59AF14C4EEDA0039A278 /* bulletmlparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bulletmlparser.h; path = libs/BulletML/bulletmlparser.h; sourceTree = "<group>"; };
+		489B59B014C4EEDA0039A278 /* bulletmlrunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bulletmlrunner.cpp; path = libs/BulletML/bulletmlrunner.cpp; sourceTree = "<group>"; };
+		489B59B114C4EEDA0039A278 /* bulletmlrunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bulletmlrunner.h; path = libs/BulletML/bulletmlrunner.h; sourceTree = "<group>"; };
+		489B59B214C4EEDA0039A278 /* bulletmlrunnerimpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bulletmlrunnerimpl.cpp; path = libs/BulletML/bulletmlrunnerimpl.cpp; sourceTree = "<group>"; };
+		489B59B314C4EEDA0039A278 /* bulletmlrunnerimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bulletmlrunnerimpl.h; path = libs/BulletML/bulletmlrunnerimpl.h; sourceTree = "<group>"; };
+		489B59B414C4EEDA0039A278 /* bulletmltree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bulletmltree.cpp; path = libs/BulletML/bulletmltree.cpp; sourceTree = "<group>"; };
+		489B59B514C4EEDA0039A278 /* bulletmltree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bulletmltree.h; path = libs/BulletML/bulletmltree.h; sourceTree = "<group>"; };
+		489B59B614C4EEDA0039A278 /* calc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = calc.cpp; path = libs/BulletML/calc.cpp; sourceTree = "<group>"; };
+		489B59B714C4EEDA0039A278 /* calc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = calc.h; path = libs/BulletML/calc.h; sourceTree = "<group>"; };
+		489B59B814C4EEDA0039A278 /* formula-variables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "formula-variables.cpp"; path = "libs/BulletML/formula-variables.cpp"; sourceTree = "<group>"; };
+		489B59B914C4EEDA0039A278 /* formula-variables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "formula-variables.h"; path = "libs/BulletML/formula-variables.h"; sourceTree = "<group>"; };
+		489B59BA14C4EEDA0039A278 /* formula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = formula.h; path = libs/BulletML/formula.h; sourceTree = "<group>"; };
+		489B59BB14C4EEDA0039A278 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tree.h; path = libs/BulletML/tree.h; sourceTree = "<group>"; };
+		489B59C314C4EEF30039A278 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = libs/BulletML/tinyxml/tinyxml.cpp; sourceTree = "<group>"; };
+		489B59C414C4EEF30039A278 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = libs/BulletML/tinyxml/tinyxml.h; sourceTree = "<group>"; };
+		489B59C514C4EEF30039A278 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = libs/BulletML/tinyxml/tinyxmlerror.cpp; sourceTree = "<group>"; };
+		489B59C614C4EEF30039A278 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = libs/BulletML/tinyxml/tinyxmlparser.cpp; sourceTree = "<group>"; };
+		48A3AF9214C7F80600C6A88F /* command.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = command.cc; path = "Source/bulletml-wrapper/command.cc"; sourceTree = "<group>"; };
+		48A3AF9314C7F80600C6A88F /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = command.h; path = "Source/bulletml-wrapper/command.h"; sourceTree = "<group>"; };
+		48A3AF9414C7F80600C6A88F /* object.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = object.cc; path = "Source/bulletml-wrapper/object.cc"; sourceTree = "<group>"; };
+		48A3AF9514C7F80600C6A88F /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object.h; path = "Source/bulletml-wrapper/object.h"; sourceTree = "<group>"; };
+		48A3AF9B14C7F9C500C6A88F /* BulletMLController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BulletMLController.mm; path = libs/BulletML/BulletMLController.mm; sourceTree = "<group>"; };
+		48A3AF9D14C7F9D400C6A88F /* BulletMLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulletMLController.h; path = libs/BulletML/BulletMLController.h; sourceTree = "<group>"; };
+		48F154AF14C8EAD90049CB44 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = particle.png; path = Resources/particle.png; sourceTree = "<group>"; };
+		48F154EA14C8EBD90049CB44 /* auto_ptr_fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_ptr_fix.h; path = libs/BulletML/auto_ptr_fix.h; sourceTree = "<group>"; };
+		48F1551314C8EF0B0049CB44 /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sample.xml; path = Resources/sample.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,7 +547,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		482D656414C54C8B00168425 /* BulletML */ = {
+		482D656414C54C8B00168425 /* CocosBulletMLWrapper */ = {
 			isa = PBXGroup;
 			children = (
 				48A3AF9214C7F80600C6A88F /* command.cc */,
@@ -560,12 +560,13 @@
 				4886913B14C89D0C0020EA27 /* CCBulletSprite.h */,
 				4886913C14C89D0C0020EA27 /* CCBulletSprite.mm */,
 			);
-			name = BulletML;
+			name = CocosBulletMLWrapper;
 			sourceTree = "<group>";
 		};
 		4886914014C8AF990020EA27 /* bulletml */ = {
 			isa = PBXGroup;
 			children = (
+				48F1551314C8EF0B0049CB44 /* sample.xml */,
 				4886914114C8AFA10020EA27 /* boss */,
 			);
 			name = bulletml;
@@ -613,16 +614,14 @@
 		489B579814C4EDD60039A278 /* BulletHaven */ = {
 			isa = PBXGroup;
 			children = (
-				482D656414C54C8B00168425 /* BulletML */,
+				482D656414C54C8B00168425 /* CocosBulletMLWrapper */,
 				489B596014C4EDD90039A278 /* AppDelegate.h */,
 				489B596114C4EDD90039A278 /* AppDelegate.mm */,
 				489B596314C4EDD90039A278 /* RootViewController.h */,
 				489B596414C4EDD90039A278 /* RootViewController.m */,
 				482D655614C4F1F700168425 /* BulletLayer.h */,
 				482D655714C4F1F700168425 /* BulletLayer.mm */,
-				489B596914C4EDD90039A278 /* GLES-Render.h */,
-				489B596A14C4EDD90039A278 /* GLES-Render.mm */,
-				489B596C14C4EDD90039A278 /* GameConfig.h */,
+				48F1551214C8EEC80049CB44 /* supportfiles */,
 				489B579914C4EDD60039A278 /* Resources */,
 				489B57AD14C4EDD60039A278 /* libs */,
 				489B595C14C4EDD90039A278 /* Supporting Files */,
@@ -634,8 +633,7 @@
 			isa = PBXGroup;
 			children = (
 				4886914014C8AF990020EA27 /* bulletml */,
-				4886913E14C8AA1D0020EA27 /* particle.png */,
-				48A3AF9E14C7FDAB00C6A88F /* sample.xml */,
+				48F154AF14C8EAD90049CB44 /* particle.png */,
 				489B579A14C4EDD60039A278 /* Default.png */,
 				489B579C14C4EDD60039A278 /* fps_images.png */,
 				489B579E14C4EDD60039A278 /* Icon-72.png */,
@@ -1097,8 +1095,8 @@
 		489B597414C4EE640039A278 /* BulletML */ = {
 			isa = PBXGroup;
 			children = (
+				48F154EA14C8EBD90049CB44 /* auto_ptr_fix.h */,
 				489B59CA14C4EEF70039A278 /* tinyxml */,
-				489B59A914C4EEDA0039A278 /* auto_ptr_fix.h */,
 				489B59AA14C4EEDA0039A278 /* bulletmlcommon.h */,
 				489B59AB14C4EEDA0039A278 /* bulletmlerror.h */,
 				489B59AC14C4EEDA0039A278 /* bulletmlparser-tinyxml.cpp */,
@@ -1130,6 +1128,16 @@
 				489B59C614C4EEF30039A278 /* tinyxmlparser.cpp */,
 			);
 			name = tinyxml;
+			sourceTree = "<group>";
+		};
+		48F1551214C8EEC80049CB44 /* supportfiles */ = {
+			isa = PBXGroup;
+			children = (
+				489B596914C4EDD90039A278 /* GLES-Render.h */,
+				489B596A14C4EDD90039A278 /* GLES-Render.mm */,
+				489B596C14C4EDD90039A278 /* GameConfig.h */,
+			);
+			name = supportfiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1192,8 +1200,8 @@
 				489B57A914C4EDD60039A278 /* Icon@2x.png in Resources */,
 				489B57AC14C4EDD60039A278 /* iTunesArtwork in Resources */,
 				489B596E14C4EDD90039A278 /* blocks.png in Resources */,
-				48A3AFA014C7FDAB00C6A88F /* sample.xml in Resources */,
-				4886913F14C8AA1D0020EA27 /* particle.png in Resources */,
+				48F154B014C8EAD90049CB44 /* particle.png in Resources */,
+				48F1551414C8EF0B0049CB44 /* sample.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1411,7 +1419,7 @@
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"BulletHaven/boost\" \"BulletHaven/libs\"";
+				USER_HEADER_SEARCH_PATHS = "\"BulletHaven/libs\" \"BulletHaven/libs/boost\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1431,7 +1439,7 @@
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"BulletHaven/boost\" \"BulletHaven/libs\"";
+				USER_HEADER_SEARCH_PATHS = "\"BulletHaven/libs\" \"BulletHaven/libs/boost\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

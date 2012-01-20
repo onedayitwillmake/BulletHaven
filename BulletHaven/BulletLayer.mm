@@ -72,7 +72,6 @@
     int tileSize = 64;
     float imageSize = 256-tileSize;
     int idx = round(CCRANDOM_0_1()*imageSize / tileSize) * tileSize;
-//    idx = 1;
     
     for (size_t i = 0; i < bulletController->objs.size(); i++) {
         if( !bulletController->objs[i]->hasCCNode ) {
@@ -87,9 +86,9 @@
     
     for (CCBulletSprite* bulletSprite in bulletBatchNode.children) {
         bulletSprite.position = CGPointMake(bulletSprite->bullet_->x, bulletSprite->bullet_->y-80);
-//        if( !bulletSprite->bullet_->alive_ ) {
-//            [bulletBatchNode removeChild:bulletSprite cleanup:YES];
-//        }
+        if( !bulletSprite->bullet_->alive_ ) {
+            [bulletBatchNode removeChild:bulletSprite cleanup:YES];
+        }
     }
     
     bulletController->update();

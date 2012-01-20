@@ -160,7 +160,6 @@
 		489B595F14C4EDD90039A278 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B595E14C4EDD90039A278 /* main.m */; };
 		489B596214C4EDD90039A278 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 489B596114C4EDD90039A278 /* AppDelegate.mm */; };
 		489B596514C4EDD90039A278 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B596414C4EDD90039A278 /* RootViewController.m */; };
-		489B596814C4EDD90039A278 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 489B596714C4EDD90039A278 /* HelloWorldLayer.mm */; };
 		489B596B14C4EDD90039A278 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 489B596A14C4EDD90039A278 /* GLES-Render.mm */; };
 		489B596E14C4EDD90039A278 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 489B596D14C4EDD90039A278 /* blocks.png */; };
 		489B59BC14C4EEDA0039A278 /* bulletmlparser-tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489B59AC14C4EEDA0039A278 /* bulletmlparser-tinyxml.cpp */; };
@@ -493,8 +492,6 @@
 		489B596114C4EDD90039A278 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		489B596314C4EDD90039A278 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		489B596414C4EDD90039A278 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		489B596614C4EDD90039A278 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		489B596714C4EDD90039A278 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		489B596914C4EDD90039A278 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		489B596A14C4EDD90039A278 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		489B596C14C4EDD90039A278 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
@@ -621,8 +618,6 @@
 				489B596114C4EDD90039A278 /* AppDelegate.mm */,
 				489B596314C4EDD90039A278 /* RootViewController.h */,
 				489B596414C4EDD90039A278 /* RootViewController.m */,
-				489B596614C4EDD90039A278 /* HelloWorldLayer.h */,
-				489B596714C4EDD90039A278 /* HelloWorldLayer.mm */,
 				482D655614C4F1F700168425 /* BulletLayer.h */,
 				482D655714C4F1F700168425 /* BulletLayer.mm */,
 				489B596914C4EDD90039A278 /* GLES-Render.h */,
@@ -1342,7 +1337,6 @@
 				489B595F14C4EDD90039A278 /* main.m in Sources */,
 				489B596214C4EDD90039A278 /* AppDelegate.mm in Sources */,
 				489B596514C4EDD90039A278 /* RootViewController.m in Sources */,
-				489B596814C4EDD90039A278 /* HelloWorldLayer.mm in Sources */,
 				489B596B14C4EDD90039A278 /* GLES-Render.mm in Sources */,
 				489B59BC14C4EEDA0039A278 /* bulletmlparser-tinyxml.cpp in Sources */,
 				489B59BD14C4EEDA0039A278 /* bulletmlparser.cpp in Sources */,

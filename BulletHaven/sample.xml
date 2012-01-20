@@ -21,7 +21,7 @@
     
     <bullet label="roll">
         <action>
-            <wait>40</wait>
+            <wait>40+$rand*10</wait>
             <changeDirection>
                 <direction type="relative">-90</direction>
                 <term>4</term>
@@ -45,7 +45,7 @@
             <wait>40</wait>
             
             <changeDirection>
-                <direction type="sequence">-12+$rand*0.1</direction>
+                <direction type="sequence">-12-$rand*1</direction>
                 <term>99+$rand*0.5</term>
             </changeDirection>
             
@@ -56,7 +56,7 @@
                 <term>15</term>
             </changeSpeed>
             <changeDirection>
-                <direction type="sequence">12</direction>
+                <direction type="sequence">12+$rand*1</direction>
                 <term>99</term>
             </changeDirection>
             <wait>60</wait>

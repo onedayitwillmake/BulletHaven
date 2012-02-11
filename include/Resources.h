@@ -1,3 +1,3 @@
 #pragma once
 #include "cinder/CinderResources.h"
-#define RES_WHEEL    CINDER_RESOURCE( ../resources/, wheel.png, 128, IMAGE )
+#define RES_WHEEL    CINDER_RESOURCE( ../resources/, particle.png, 128, IMAGE )

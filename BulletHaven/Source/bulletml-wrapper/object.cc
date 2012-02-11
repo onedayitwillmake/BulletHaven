@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <math.h>
 
-//#include <SDL.h>
 
 Object::Object(double x0, double y0, double d0, double s0)
     : x(x0), y(y0), d(d0), s(s0), hasCCNode(false), type(BulletTypeObject)
@@ -62,19 +61,12 @@ Ship::Ship()
     type = BulletTypeShip;
 }
 
-void Ship::move() {
-//    Uint8* ks = SDL_GetKeyState(0);
-//
-//    if (ks[SDLK_UP]) {
-//        y -= 3;
-//    }
-//    else if (ks[SDLK_DOWN]) {
-//        y += 3;
-//    }
-//    if (ks[SDLK_RIGHT]) {
-//        x += 3;
-//    }
-//    else if (ks[SDLK_LEFT]) {
-//        x -= 3;
-//    }
+void Ship::move( int keyState ) {
+
 }
+
+void Ship::move( float x0, float y0 ) {
+	x = x0;
+	y = y0;
+}
+

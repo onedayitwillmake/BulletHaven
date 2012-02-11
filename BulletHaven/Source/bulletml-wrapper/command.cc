@@ -5,7 +5,7 @@
 #include <math.h>
 
 double dtor(double x) { return x*M_PI/180; }
-double rtod(double x) { return x*180/M_PI; }
+double rtod(double x) { return x*57.2957795; }
 
 BulletCommand::BulletCommand(BulletMLParser* parser, Bullet* bullet)
     : BulletMLRunner(parser), bullet_(bullet)
@@ -20,7 +20,8 @@ double BulletCommand::getBulletDirection() {
 }
 
 double BulletCommand::getAimDirection() {
-    return rtod(M_PI-atan2(BulletMLController::getInstance()->ship->x-bullet_->x, BulletMLController::getInstance()->ship->y-bullet_->y));
+	double goal = rtod(M_PI-atan2(BulletMLController::getInstance()->ship->x-bullet_->x, BulletMLController::getInstance()->ship->y-bullet_->y));
+    return goal * 0.9;
 }
 
 double BulletCommand::getBulletSpeed() {

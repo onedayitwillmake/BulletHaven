@@ -48,7 +48,8 @@ class Ship : public Object {
 public:
     Ship();
 
-    virtual void move();
+    virtual void move( int keyState );
+    virtual void move( float x0, float y0 );
 };
 
 #endif // ! object_h_

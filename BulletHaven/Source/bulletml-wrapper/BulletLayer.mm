@@ -83,6 +83,7 @@
             }
         }
     }
+    bulletController->update();
     
     for (CCBulletSprite* bulletSprite in bulletBatchNode.children) {
         bulletSprite.position = CGPointMake(bulletSprite->bullet_->x, bulletSprite->bullet_->y-80);

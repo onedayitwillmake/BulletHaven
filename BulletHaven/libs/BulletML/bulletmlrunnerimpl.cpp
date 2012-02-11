@@ -58,6 +58,7 @@ double BulletMLRunnerImpl::getDirection(BulletMLNode* dirNode,
 
     if (isDefault) {
 		// –¾‚ç‚©‚É”ñŒø—¦
+//    	std::cout << runner_->getAimDirection() << std::endl;
 		dir += runner_->getAimDirection();
     }
 

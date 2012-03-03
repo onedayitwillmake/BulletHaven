@@ -37,14 +37,15 @@ void BulletMLController::update() {
 }
 
 void BulletMLController::draw() {
-//    for (size_t i = 0; i < objs.size(); i++) {
-//        objs[i]->draw();
-//    }
+    for (size_t i = 0; i < objs.size(); i++) {
+        objs[i]->draw();
+    }
 }
 
 BulletMLController* BulletMLController::getInstance() {
 	if (mInstance == NULL) {
-		mInstance = new BulletMLController( new std::string("sample.xml") );
+		//mInstance = new BulletMLController( new std::string("sample.xml") );
+		mInstance = new BulletMLController( new std::string("[Guwange]_round_2_boss_circle_fire.xml") );
 	}
 	return mInstance;
 }

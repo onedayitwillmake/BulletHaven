@@ -43,14 +43,15 @@
 		CGSize screenSize = [CCDirector sharedDirector].winSize;
 		CCLOG(@"Screen width %0.2f screen height %0.2f",screenSize.width,screenSize.height);
         
+		
         NSArray *filePaths = [NSBundle pathsForResourcesOfType:@"xml" inDirectory:[[NSBundle mainBundle] bundlePath]];
-        NSUInteger randomIndex = arc4random() % [filePaths count];
+        //NSUInteger randomIndex = arc4random() % [filePaths count];
                               
-        NSString* randomFile = [filePaths objectAtIndex:randomIndex];
+        NSString* randomFile = [filePaths objectAtIndex:[filePaths count]-2/*randomIndex*/];
         NSLog(@"Demoing - %@", randomFile);
         std::string *stdStringFilePath = new std::string( [randomFile UTF8String] );
         bulletController = new BulletMLController(stdStringFilePath);
-        
+        //bulletController = BulletMLController::getInstance();
         
         
         bulletBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"particle.png" capacity:2036];

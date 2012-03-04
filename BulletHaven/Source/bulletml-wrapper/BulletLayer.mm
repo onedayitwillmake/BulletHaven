@@ -100,9 +100,10 @@ static NSInteger fileIndex = 0;
     
     for (CCBulletSprite* bulletSprite in bulletBatchNode.children) {
 		if( !bulletSprite->bullet_->alive_ ) {
-			bulletController->removeObj(bulletSprite->bullet_);
-			if ([bulletBatchNode getChildByTag:bulletSprite->bullet_->objectId])
+			if ([bulletBatchNode getChildByTag:bulletSprite->bullet_->objectId]) {
+				bulletController->removeObj(bulletSprite->bullet_);
 				[bulletBatchNode removeChild:bulletSprite cleanup:YES];
+			}
         }
 		else
 			bulletSprite.position = CGPointMake(bulletSprite->bullet_->x, (screenSize.height-bulletSprite->bullet_->y));		

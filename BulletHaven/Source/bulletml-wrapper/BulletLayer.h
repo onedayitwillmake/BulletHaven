@@ -9,9 +9,10 @@
 #import "cocos2d.h"
 #import "BulletMLController.h"
 
-@interface BulletLayer : CCLayer {
+@interface BulletLayer : CCLayer <CCTargetedTouchDelegate> {
     BulletMLController* bulletController;
     CCSpriteBatchNode *bulletBatchNode;
+	CGSize screenSize;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

@@ -13,6 +13,7 @@
 #include "bulletmlparser-tinyxml.h"
 #include "object.h"
 #include <vector>
+#include <map>
 #include <iostream>
 
 class BulletMLController {
@@ -25,8 +26,12 @@ public:
     ~BulletMLController();
     static BulletMLController* getInstance();
     
-    std::vector<Object*> objs;
+    //std::vector<Object*> objs;
+	
+	std::map<int, Object*> objs;
+	
     void addObj(Object* object);
+	void removeObj(Object* object);
     void update();
     void draw();
     

@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "command.h"
 #include "object.h"
 #include "BulletMLController.h"

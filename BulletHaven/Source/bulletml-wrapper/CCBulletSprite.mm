@@ -10,7 +10,7 @@
 
 @implementation CCBulletSprite
 
-+(id) spriteWithBatchNode:(CCSpriteBatchNode*)batchNode andBullet:(Bullet*)aBullet rect:(CGRect)rect {
++(id) spriteWithBatchNode:(CCSpriteBatchNode*)batchNode andBullet:(Object*)aBullet rect:(CGRect)rect {
     CCBulletSprite* bulletSprite = [[[self alloc] initWithBatchNode:batchNode rect:rect] autorelease];
     bulletSprite->bullet_ = aBullet;
     aBullet->hasCCNode = true;
@@ -18,8 +18,6 @@
 }
 
 -(void) dealloc {
-    bullet_ = nil;
-    delete bullet_;
     [super dealloc];
 }
 @end

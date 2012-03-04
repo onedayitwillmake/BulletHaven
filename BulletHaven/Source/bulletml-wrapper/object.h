@@ -21,6 +21,12 @@ public:
     double d, s;
     BulletMLObjectType type;
     bool hasCCNode;
+	
+	bool alive_;
+	
+	// Let's assume int is enough
+	int objectId;
+	static int objectIndex;
 };
 
 class Shot : public Object {
@@ -37,7 +43,6 @@ public:
     virtual void move();
     virtual void draw();
     void die() { alive_ = false; }
-    bool alive_;
 
 private:
     class BulletCommand* command_;

@@ -6,9 +6,13 @@
 
 //#include <SDL.h>
 
+int Object::objectIndex = 10;
+
 Object::Object(double x0, double y0, double d0, double s0)
-    : x(x0), y(y0), d(d0), s(s0), hasCCNode(false), type(BulletTypeObject)
-{}
+    : x(x0), y(y0), d(d0), s(s0), hasCCNode(false), type(BulletTypeObject), objectId(objectIndex)
+{
+	objectIndex += 1;
+}
 
 void Object::move() {
     x += s * sin(d);
@@ -24,6 +28,7 @@ void Object::draw() {
 }
 
 Shot::Shot(double x, double y, double d, double s) : Object(x, y, d, s) {
+	alive_ = true;
     type = BulletTypeShot;
 }
 
@@ -31,16 +36,18 @@ Shot::Shot(double x, double y, double d, double s) : Object(x, y, d, s) {
 Bullet::Bullet(class BulletMLState* state,
                double x, double y, double d, double s)
     : Object(x, y, d, s),
-      command_(new BulletCommand(state, this)), alive_(true) {
+      command_(new BulletCommand(state, this)) {
+		  alive_ = true;
           type = BulletTypeBullet;
 }
 
 Bullet::Bullet(class BulletMLParser* parser,
                double x, double y, double d, double s)
     : Object(x, y, d, s),
-      command_(new BulletCommand(parser, this)), alive_(true)
+      command_(new BulletCommand(parser, this))
 {
-      type = BulletTypeBullet;
+	alive_ = true;
+	type = BulletTypeBullet;
 }
 
 void Bullet::move() {

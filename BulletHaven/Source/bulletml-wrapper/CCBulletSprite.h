@@ -11,7 +11,8 @@
 
 @interface CCBulletSprite : CCSprite {
 @public
-    Bullet* bullet_;
+    Object* bullet_;
 }
-+(id) spriteWithBatchNode:(CCSpriteBatchNode*)batchNode andBullet:(Bullet*)aBullet rect:(CGRect)rect;
+
++(id) spriteWithBatchNode:(CCSpriteBatchNode*)batchNode andBullet:(Object*)aBullet rect:(CGRect)rect;
 @end

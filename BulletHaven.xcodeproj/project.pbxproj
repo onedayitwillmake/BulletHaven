@@ -176,6 +176,23 @@
 		48A3AF9C14C7F9C600C6A88F /* BulletMLController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48A3AF9B14C7F9C500C6A88F /* BulletMLController.mm */; };
 		48F154B014C8EAD90049CB44 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F154AF14C8EAD90049CB44 /* particle.png */; };
 		48F1551414C8EF0B0049CB44 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48F1551314C8EF0B0049CB44 /* sample.xml */; };
+		DC8BAB3A14FEBC9500A59098 /* [1943]_rolling_fire.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB2714FEBC9500A59098 /* [1943]_rolling_fire.xml */; };
+		DC8BAB3B14FEBC9500A59098 /* [G_DARIUS]_homing_laser.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB2814FEBC9500A59098 /* [G_DARIUS]_homing_laser.xml */; };
+		DC8BAB3D14FEBC9500A59098 /* [Guwange]_round_3_boss_fast_3way.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB2A14FEBC9500A59098 /* [Guwange]_round_3_boss_fast_3way.xml */; };
+		DC8BAB3E14FEBC9500A59098 /* [Guwange]_round_4_boss_eye_ball.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB2B14FEBC9500A59098 /* [Guwange]_round_4_boss_eye_ball.xml */; };
+		DC8BAB4014FEBC9500A59098 /* [Progear]_round_2_boss_struggling.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB2D14FEBC9500A59098 /* [Progear]_round_2_boss_struggling.xml */; };
+		DC8BAB4114FEBC9500A59098 /* [Progear]_round_3_boss_back_burst.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB2E14FEBC9500A59098 /* [Progear]_round_3_boss_back_burst.xml */; };
+		DC8BAB4214FEBC9500A59098 /* [Progear]_round_3_boss_wave_bullets.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB2F14FEBC9500A59098 /* [Progear]_round_3_boss_wave_bullets.xml */; };
+		DC8BAB4314FEBC9500A59098 /* [Progear]_round_4_boss_fast_rocket.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3014FEBC9500A59098 /* [Progear]_round_4_boss_fast_rocket.xml */; };
+		DC8BAB4414FEBC9500A59098 /* [Progear]_round_5_boss_last_round_wave.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3114FEBC9500A59098 /* [Progear]_round_5_boss_last_round_wave.xml */; };
+		DC8BAB4514FEBC9500A59098 /* [Progear]_round_5_middle_boss_rockets.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3214FEBC9500A59098 /* [Progear]_round_5_middle_boss_rockets.xml */; };
+		DC8BAB4614FEBC9500A59098 /* [Progear]_round_6_boss_parabola_shot.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3314FEBC9500A59098 /* [Progear]_round_6_boss_parabola_shot.xml */; };
+		DC8BAB4714FEBC9500A59098 /* [Psyvariar]_X-A_boss_opening.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3414FEBC9500A59098 /* [Psyvariar]_X-A_boss_opening.xml */; };
+		DC8BAB4814FEBC9500A59098 /* [Psyvariar]_X-A_boss_winder.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3514FEBC9500A59098 /* [Psyvariar]_X-A_boss_winder.xml */; };
+		DC8BAB4914FEBC9500A59098 /* [Psyvariar]_X-B_colony_shape_satellite.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3614FEBC9500A59098 /* [Psyvariar]_X-B_colony_shape_satellite.xml */; };
+		DC8BAB4A14FEBC9500A59098 /* [XEVIOUS]_garu_zakato.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3714FEBC9500A59098 /* [XEVIOUS]_garu_zakato.xml */; };
+		DC8BAB4B14FEBC9500A59098 /* bulletml.dtd in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3814FEBC9500A59098 /* bulletml.dtd */; };
+		DC8BAB4C14FEBC9500A59098 /* template.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC8BAB3914FEBC9500A59098 /* template.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -526,6 +543,23 @@
 		48F154AF14C8EAD90049CB44 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = particle.png; path = Resources/particle.png; sourceTree = "<group>"; };
 		48F154EA14C8EBD90049CB44 /* auto_ptr_fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_ptr_fix.h; path = libs/BulletML/auto_ptr_fix.h; sourceTree = "<group>"; };
 		48F1551314C8EF0B0049CB44 /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sample.xml; path = Resources/sample.xml; sourceTree = "<group>"; };
+		DC8BAB2714FEBC9500A59098 /* [1943]_rolling_fire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[1943]_rolling_fire.xml"; path = "Resources/xml/[1943]_rolling_fire.xml"; sourceTree = "<group>"; };
+		DC8BAB2814FEBC9500A59098 /* [G_DARIUS]_homing_laser.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[G_DARIUS]_homing_laser.xml"; path = "Resources/xml/[G_DARIUS]_homing_laser.xml"; sourceTree = "<group>"; };
+		DC8BAB2A14FEBC9500A59098 /* [Guwange]_round_3_boss_fast_3way.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Guwange]_round_3_boss_fast_3way.xml"; path = "Resources/xml/[Guwange]_round_3_boss_fast_3way.xml"; sourceTree = "<group>"; };
+		DC8BAB2B14FEBC9500A59098 /* [Guwange]_round_4_boss_eye_ball.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Guwange]_round_4_boss_eye_ball.xml"; path = "Resources/xml/[Guwange]_round_4_boss_eye_ball.xml"; sourceTree = "<group>"; };
+		DC8BAB2D14FEBC9500A59098 /* [Progear]_round_2_boss_struggling.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Progear]_round_2_boss_struggling.xml"; path = "Resources/xml/[Progear]_round_2_boss_struggling.xml"; sourceTree = "<group>"; };
+		DC8BAB2E14FEBC9500A59098 /* [Progear]_round_3_boss_back_burst.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Progear]_round_3_boss_back_burst.xml"; path = "Resources/xml/[Progear]_round_3_boss_back_burst.xml"; sourceTree = "<group>"; };
+		DC8BAB2F14FEBC9500A59098 /* [Progear]_round_3_boss_wave_bullets.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Progear]_round_3_boss_wave_bullets.xml"; path = "Resources/xml/[Progear]_round_3_boss_wave_bullets.xml"; sourceTree = "<group>"; };
+		DC8BAB3014FEBC9500A59098 /* [Progear]_round_4_boss_fast_rocket.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Progear]_round_4_boss_fast_rocket.xml"; path = "Resources/xml/[Progear]_round_4_boss_fast_rocket.xml"; sourceTree = "<group>"; };
+		DC8BAB3114FEBC9500A59098 /* [Progear]_round_5_boss_last_round_wave.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Progear]_round_5_boss_last_round_wave.xml"; path = "Resources/xml/[Progear]_round_5_boss_last_round_wave.xml"; sourceTree = "<group>"; };
+		DC8BAB3214FEBC9500A59098 /* [Progear]_round_5_middle_boss_rockets.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Progear]_round_5_middle_boss_rockets.xml"; path = "Resources/xml/[Progear]_round_5_middle_boss_rockets.xml"; sourceTree = "<group>"; };
+		DC8BAB3314FEBC9500A59098 /* [Progear]_round_6_boss_parabola_shot.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Progear]_round_6_boss_parabola_shot.xml"; path = "Resources/xml/[Progear]_round_6_boss_parabola_shot.xml"; sourceTree = "<group>"; };
+		DC8BAB3414FEBC9500A59098 /* [Psyvariar]_X-A_boss_opening.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Psyvariar]_X-A_boss_opening.xml"; path = "Resources/xml/[Psyvariar]_X-A_boss_opening.xml"; sourceTree = "<group>"; };
+		DC8BAB3514FEBC9500A59098 /* [Psyvariar]_X-A_boss_winder.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Psyvariar]_X-A_boss_winder.xml"; path = "Resources/xml/[Psyvariar]_X-A_boss_winder.xml"; sourceTree = "<group>"; };
+		DC8BAB3614FEBC9500A59098 /* [Psyvariar]_X-B_colony_shape_satellite.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[Psyvariar]_X-B_colony_shape_satellite.xml"; path = "Resources/xml/[Psyvariar]_X-B_colony_shape_satellite.xml"; sourceTree = "<group>"; };
+		DC8BAB3714FEBC9500A59098 /* [XEVIOUS]_garu_zakato.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "[XEVIOUS]_garu_zakato.xml"; path = "Resources/xml/[XEVIOUS]_garu_zakato.xml"; sourceTree = "<group>"; };
+		DC8BAB3814FEBC9500A59098 /* bulletml.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = bulletml.dtd; path = Resources/xml/bulletml.dtd; sourceTree = "<group>"; };
+		DC8BAB3914FEBC9500A59098 /* template.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = template.xml; path = Resources/xml/template.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -566,6 +600,23 @@
 		4886914014C8AF990020EA27 /* bulletml */ = {
 			isa = PBXGroup;
 			children = (
+				DC8BAB2714FEBC9500A59098 /* [1943]_rolling_fire.xml */,
+				DC8BAB2814FEBC9500A59098 /* [G_DARIUS]_homing_laser.xml */,
+				DC8BAB2A14FEBC9500A59098 /* [Guwange]_round_3_boss_fast_3way.xml */,
+				DC8BAB2B14FEBC9500A59098 /* [Guwange]_round_4_boss_eye_ball.xml */,
+				DC8BAB2D14FEBC9500A59098 /* [Progear]_round_2_boss_struggling.xml */,
+				DC8BAB2E14FEBC9500A59098 /* [Progear]_round_3_boss_back_burst.xml */,
+				DC8BAB2F14FEBC9500A59098 /* [Progear]_round_3_boss_wave_bullets.xml */,
+				DC8BAB3014FEBC9500A59098 /* [Progear]_round_4_boss_fast_rocket.xml */,
+				DC8BAB3114FEBC9500A59098 /* [Progear]_round_5_boss_last_round_wave.xml */,
+				DC8BAB3214FEBC9500A59098 /* [Progear]_round_5_middle_boss_rockets.xml */,
+				DC8BAB3314FEBC9500A59098 /* [Progear]_round_6_boss_parabola_shot.xml */,
+				DC8BAB3414FEBC9500A59098 /* [Psyvariar]_X-A_boss_opening.xml */,
+				DC8BAB3514FEBC9500A59098 /* [Psyvariar]_X-A_boss_winder.xml */,
+				DC8BAB3614FEBC9500A59098 /* [Psyvariar]_X-B_colony_shape_satellite.xml */,
+				DC8BAB3714FEBC9500A59098 /* [XEVIOUS]_garu_zakato.xml */,
+				DC8BAB3814FEBC9500A59098 /* bulletml.dtd */,
+				DC8BAB3914FEBC9500A59098 /* template.xml */,
 				48F1551314C8EF0B0049CB44 /* sample.xml */,
 				4886914114C8AFA10020EA27 /* boss */,
 			);
@@ -1202,6 +1253,23 @@
 				489B596E14C4EDD90039A278 /* blocks.png in Resources */,
 				48F154B014C8EAD90049CB44 /* particle.png in Resources */,
 				48F1551414C8EF0B0049CB44 /* sample.xml in Resources */,
+				DC8BAB3A14FEBC9500A59098 /* [1943]_rolling_fire.xml in Resources */,
+				DC8BAB3B14FEBC9500A59098 /* [G_DARIUS]_homing_laser.xml in Resources */,
+				DC8BAB3D14FEBC9500A59098 /* [Guwange]_round_3_boss_fast_3way.xml in Resources */,
+				DC8BAB3E14FEBC9500A59098 /* [Guwange]_round_4_boss_eye_ball.xml in Resources */,
+				DC8BAB4014FEBC9500A59098 /* [Progear]_round_2_boss_struggling.xml in Resources */,
+				DC8BAB4114FEBC9500A59098 /* [Progear]_round_3_boss_back_burst.xml in Resources */,
+				DC8BAB4214FEBC9500A59098 /* [Progear]_round_3_boss_wave_bullets.xml in Resources */,
+				DC8BAB4314FEBC9500A59098 /* [Progear]_round_4_boss_fast_rocket.xml in Resources */,
+				DC8BAB4414FEBC9500A59098 /* [Progear]_round_5_boss_last_round_wave.xml in Resources */,
+				DC8BAB4514FEBC9500A59098 /* [Progear]_round_5_middle_boss_rockets.xml in Resources */,
+				DC8BAB4614FEBC9500A59098 /* [Progear]_round_6_boss_parabola_shot.xml in Resources */,
+				DC8BAB4714FEBC9500A59098 /* [Psyvariar]_X-A_boss_opening.xml in Resources */,
+				DC8BAB4814FEBC9500A59098 /* [Psyvariar]_X-A_boss_winder.xml in Resources */,
+				DC8BAB4914FEBC9500A59098 /* [Psyvariar]_X-B_colony_shape_satellite.xml in Resources */,
+				DC8BAB4A14FEBC9500A59098 /* [XEVIOUS]_garu_zakato.xml in Resources */,
+				DC8BAB4B14FEBC9500A59098 /* bulletml.dtd in Resources */,
+				DC8BAB4C14FEBC9500A59098 /* template.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
